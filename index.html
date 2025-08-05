@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Gospel+</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #4b0082;
+    }
+    .canal {
+      margin: 20px auto;
+    }
+    iframe {
+      width: 90%;
+      height: 250px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .canal-nome {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>📺 TV Gospel+</h1>
+
+  <div class="canal">
+    <div class="canal-nome">Rede Gospel</div>
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UC6LoG5p4RPKdTLHf53uKL9A" allowfullscreen></iframe>
+  </div>
+
+  <div class="canal">
+    <div class="canal-nome">TV Boas Novas</div>
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UCjLq6vKhEWGdiP4gG4UEpSg" allowfullscreen></iframe>
+  </div>
+
+  <div class="canal">
+    <div class="canal-nome">Rede Super</div>
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UCV7e8bJLoXF8tIY3SPBt_Hg" allowfullscreen></iframe>
+  </div>
+
+  <div class="canal">
+    <div class="canal-nome">TV Novo Tempo</div>
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UCvR4Ggi5UV2jY276YjDm1Xg" allowfullscreen></iframe>
+  </div>
+
+  <div class="canal">
+    <div class="canal-nome">TV Verdade</div>
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UC5nZY4nLVYLGAzONeQ1y9Vw" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
